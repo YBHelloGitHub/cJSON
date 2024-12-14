@@ -158,7 +158,7 @@ typedef struct internal_hooks
     void *(CJSON_CDECL *allocate)(size_t size);
     void (CJSON_CDECL *deallocate)(void *pointer);
     void *(CJSON_CDECL *reallocate)(void *pointer, size_t size);
-} internal_hooks;
+} internal_hooks;   // 搞内存分配、释放、重新分配
 
 #if defined(_MSC_VER)
 /* work around MSVC error C2322: '...' address of dllimport '...' is not static */
